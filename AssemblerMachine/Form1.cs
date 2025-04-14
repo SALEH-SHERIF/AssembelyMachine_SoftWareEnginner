@@ -259,10 +259,10 @@ namespace AssemblerMachine
                 }
 
                 // Check if the input is a valid non-negative integer
-                if (!int.TryParse(field.TextBox.Text, out int number) || number < 0)
+                if (!int.TryParse(field.TextBox.Text, out int number) || number < 0 || number > 1000000)
                 {
                     isValid = false;
-                    errorMessage = $"{field.FieldName} Numbers must be a valid non-negative integer.";
+                    errorMessage = $"{field.FieldName} Numbers must be (Integer) at least 1 and at most 1000000";
                     break;
                 }
 
