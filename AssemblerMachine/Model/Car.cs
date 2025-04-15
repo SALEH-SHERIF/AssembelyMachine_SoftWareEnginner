@@ -1,6 +1,4 @@
-﻿
-
-namespace AssemblerMachine.DataAccess;
+﻿namespace AssemblerMachine.Model;
 
 public class Car
 {

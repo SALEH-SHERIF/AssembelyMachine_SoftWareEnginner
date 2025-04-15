@@ -1,5 +1,4 @@
-﻿
-using AssemblerMachine.DataAccess;
+﻿using AssemblerMachine.Model;
 
 namespace AssemblerMachine.Services
 {

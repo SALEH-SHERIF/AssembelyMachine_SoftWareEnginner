@@ -1,5 +1,7 @@
 ﻿
 
+using AssemblerMachine.Model;
+
 namespace AssemblerMachine.DataAccess
 {
     public class CarRepository : ICarRepository

@@ -1,8 +1,8 @@
 ﻿
 using AssemblerMachine.DataAccess;
-using AssemblerMachine.Services.Helpers;
 using System.Runtime.InteropServices;
 using MachinesWrapper;
+using AssemblerMachine.Model;
 namespace AssemblerMachine.Services
 {
     public class AssembleService : IAssembleService

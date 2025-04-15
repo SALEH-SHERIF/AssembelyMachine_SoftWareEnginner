@@ -1,5 +1,6 @@
 ﻿
 using AssemblerMachine.DataAccess;
+using AssemblerMachine.Model;
 
 namespace AssemblerMachine.Services
 {
@@ -14,5 +15,20 @@ namespace AssemblerMachine.Services
         {
             return _carRepository.GetAllCars();
         }
-    }
+		public Car CreateCar(string wheelType, int wheelNumber, string doorType, int doorNumber,
+							  string glassType, int glassNumber, string motorType, int motorNumber)
+		{
+			return new Car
+			{
+				WheelType = wheelType ?? "unselectedWheel",
+				WheelNumber = wheelNumber,
+				DoorType = doorType ?? "unselectedDoor",
+				DoorNumber = doorNumber,
+				GlassType = glassType ?? "unselectedGlass",
+				GlassNumber = glassNumber,
+				MotorType = motorType ?? "unselectedMotor",
+				MotorNumber = motorNumber
+			};
+		}
+	}
 }

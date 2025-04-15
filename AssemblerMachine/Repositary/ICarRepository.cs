@@ -1,4 +1,6 @@
-﻿namespace AssemblerMachine.DataAccess
+﻿using AssemblerMachine.Model;
+
+namespace AssemblerMachine.DataAccess
 {
     public interface ICarRepository
     {
